@@ -19,7 +19,7 @@ personal project
 
   4. 浏览器方式查看
   访问本机的: 
-    > localhost:8000/index.html
-    > localhost:8000/detail.html
-    > localhost:8000/send-verify-code.html
-    > localhost:8000/new-pasword.html
+    - localhost:8000/index.html
+    - localhost:8000/detail.html
+    - localhost:8000/send-verify-code.html
+    - localhost:8000/new-pasword.html
