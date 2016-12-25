@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Jjvein Leo">
+    <meta name="author" content="Jjvein <jjvein@gmail.com>">
+
+    <title>ASPie</title>
+    <!-- Bootstrap core CSS -->
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./resources/css/main.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="/favicon.ico">
+    <script src="./resources/js/vue.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h3>注册</h3>
+        </div>
+        <div class="rg-form-container">
+            <form role="form" action="./post-page">
+                <div class="form-group">
+                    <label for="">姓名: </label>
+                    <input type="text" class="form-control abs-input" id="" name="" placeholder="请输入真实姓名">
+                </div>
+                <div class="form-group">
+                    <label for="">公司: </label>
+                    <input type="text" class="form-control abs-input" id="" name="" placeholder="总部的全称, 如: XX银行有限股份公司">
+                </div>
+                <div class="form-group">
+                    <label for="">分支行/分部/中心等: </label>
+                    <input type="text" class="form-control abs-input" id="" name="" placeholder="如: 上海分行/上海业务中心/无">
+                </div>
+                <div class="form-group">
+                    <label for="">部门: </label>
+                    <input type="text" class="form-control abs-input" id="" name="" placeholder="如: 金融市场部/贸易管理部/无">
+                </div>
+                <div class="form-group">
+                    <label for="">职位: </label>
+                    <input type="text" class="form-control abs-input" id="" name="" placeholder="如: 总经理/团队负责人/交易员/业务员等">
+                </div>
+                <div class="form-group">
+                    <label for="">邮箱: </label>
+                    <input type="email" class="form-control abs-input" id="" name="" placeholder="请输入公司邮箱或常用办公邮箱">
+                </div>
+                <div class="form-group">
+                    <label for="">座机: </label>
+                    <input type="text" class="form-control abs-input" id="" name="" placeholder="如: 021-48759274/无">
+                </div>
+                <div class="form-group">
+                    <label for="">传真: </label>
+                    <input type="text" class="form-control abs-input" id="" name="" placeholder="如: 021-48759288/无">
+                </div>
+                <div class="form-group">
+                    <label for="">手机号: </label>
+                    <input type="text" class="form-control abs-input" id="" name="" placeholder="手机号作为登录账号">
+                </div>
+                <div class="form-group">
+                    <label for="">短信验证码: </label>
+                    <div class="input-group" id="send-verify-code">
+                        <input type="text" class="form-control abs-input" id="" name="" placeholder="60秒可重新发送">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button" v-on:click="sendVerifyCode">{{ message }}</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="">密码: </label>
+                    <input type="password" class="form-control abs-input" id="" name="" placeholder="6-16位">
+                </div>
+                <div class="form-group">
+                    <label for="">确认密码: </label>
+                    <input type="password" class="form-control abs-input" id="" name="" placeholder="跟上面一致">
+                </div>
+                <div class="rg-button-container">
+                    <button type="reset" class="btn btn-default pull-left">取消</button>
+                    <button type="submit" class="btn btn-default pull-right">注册</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    var instance = new Vue({
+        el: '#send-verify-code',
+        // 在 `methods` 对象中定义方法
+        data: {
+          lock: false,
+          message: '发送验证码'
+        },
+        methods: {
+            sendVerifyCode: function (event) {
+                // `this` 在方法里指当前 Vue 实例
+                var timeout = 60,
+                        that = this;
+                if(that.lock) return;
+                that.lock = true;
+                (function iife(timeout) {
+                   setTimeout(function() {
+                       if(timeout >= 0) {
+                           that.message = "  " + timeout + '秒';
+                           iife(--timeout);
+                       } else {
+                           that.lock = false;
+                           that.message = '重新发送';
+                       }
+                       console.log(timeout);
+                       return;
+                   }, 1000);
+                }(timeout));
+            }
+        }
+    })
+</script>
+</html>
