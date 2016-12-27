@@ -1,4 +1,12 @@
 
+.outer-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 90%;
+}
 .rg-form-container {
     width: 500px;
     margin: 0 auto 50px;
@@ -6,6 +14,12 @@
 
 .form-group .abs-input {
     width: 410px;
+}
+.form-group.al-cr {
+    text-align: center;
+}
+.form-group.al-cr button:first-child {
+    margin-right: 20px;
 }
 .form-group .input-group-btn {
     display: inline-block;
@@ -18,6 +32,13 @@
 }
 .detail-page-header {
     display: flex;
+}
+
+.detail-page-header .header-ul {
+    list-style: none;
+}
+.detail-page-header .header-ul li{
+    text-align: right;
 }
 .detail-page-header h4{
     flex: 1;
@@ -45,9 +66,43 @@
 }
 
 /* 不添加横线 */
-.table-no-border > tbody > tr > td{
+.table-no-border, .table-no-border >tbody, .table-no-border > tbody > tr > td{
     border: none;
 }
 
+.ul-container {
+    list-style-type: none;
+    width: 500px;
+    margin: 0 auto;
+}
 
+.ul-container li span:first-child {
+    width: 100px;
+    text-align: right;
+}
+
+.list-item {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.list-item ul {
+    display: flex;
+    display: -webkit-flex;
+    list-style: none;
+    text-align: center;
+}
+.list-item ul li {
+    padding: 0 10px;
+    height: 50px;
+    line-height: 50px;
+    min-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.list-item .table > tr > td {
+    text-align: center;
+}
 
