@@ -27,3 +27,5 @@ personal project
      [localhost:8000/send-verify-code.html](http://localhost:8000/send-verify-code.html)
      
      [localhost:8000/new-pasword.html](http://localhost:8000/new-pasword.html)
+
+     [localhost:8000/list.html](http://localhost:8000/list.html)

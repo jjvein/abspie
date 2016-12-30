@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Jjvein Leo">
+    <meta name="author" content="Jjvein <jjvein@gmail.com>">
+
+    <title>ASPie</title>
+    <!-- Bootstrap core CSS -->
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./resources/css/step-component.css" rel="stylesheet">
+    <link href="./resources/css/main.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="/favicon.ico">
+    <script src="./resources/js/vue.js"></script>
+</head>
+<body>
+
+<div class="modal fade bs-example-modal-lg in ctr-block" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-backdrop fade in"></div>
+    <div class="modal-dialog modal-lg ">
+        <div class="modal-content">
+            <div class="container">
+                <div class="page-header">
+                    <h4>登录</h4>
+                </div>
+                <form role="form" action="./post-page">
+                    <div class="form-group">
+                        <label for="">手机登录: </label>
+                        <input type="text" class="form-control " id=""
+                               name="" placeholder="请输入手机号">
+                    </div>
+                    <div class="form-group">
+                        <label for="">密码: </label>
+                        <input type="text" class="form-control" id=""
+                               name="" placeholder="">
+                    </div>
+                    <div class="rg-button-container">
+                        <button type="reset" class="btn btn-default pull-left">取消</button>
+                        <button type="submit" class="btn btn-default pull-right">登录</button>
+                    </div>
+                    <div class="rg-button-container">
+                        <a href="#" class="pull-left">忘记密码</a>
+                        <a href="#" class="pull-right">免费注册</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="outer-container">
+    <div class="page-header detail-page-header">
+        <h4>ABSpie</h4>
+        <ul class="header-ul">
+            <li><a href="#">登录</a>/<a href="#">注册</a></li>
+            <li>注册,登录"ABSpie网页版"之后:</li>
+            <li>1. 可发布产品; 2. 可下载材料; 3. 可见产品联系人; 4. 可见非标准ABS</li>
+        </ul>
+    </div>
+
+    <div class="container ">
+        <form role="form " class="form-horizontal" action="./post-page">
+            <div class="form-group">
+                <div class="input-group">
+                    <input class="form-control" type="text"
+                           placeholder="🔍 搜索产品全称,原始权益人全称,主承简介,管理人简介,证券简介,证券代码"
+                           style="text-align: center">
+                    <a class="btn btn-default input-group-addon">
+                        <i class="glyphicon glyphicon-plus"></i>添加产品
+                    </a>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-2">
+                    <select class="form-control">
+                        <option>AAAA</option>
+                        <option>AAAA</option>
+                        <option>AAAA</option>
+                        <option>AAAA</option>
+                    </select>
+                </div>
+                <div class="col-xs-2">
+                    <select class="form-control"><option>AAAA</option></select>
+                </div>
+                <div class="col-xs-2">
+                    <select class="form-control"><option>AAAA</option></select>
+                </div>
+                <div class="col-xs-2">
+                    <select class="form-control"><option>AAAA</option></select>
+                </div>
+                <div class="col-xs-2">
+                    <select class="form-control"><option>AAAA</option></select>
+                </div>
+                <a href="#" class="btn btn-default">
+                    <i class="glyphicon glyphicon-filter"></i> 确认筛选
+                </a>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="list-item">
+            <ul>
+                <li>预计发行日: 2016.11.13 周五</li>
+                <li>华谊兄弟影院信托受益权资产支持证券</li>
+                <li>总规模: 11.35亿</li>
+                <li>发行期</li>
+                <li>上交所</li>
+                <li>企业ABS</li>
+            </ul>
+            <table class="table table-no-border">
+                <tr>
+                    <th>分档情况</th>
+                    <th>评级</th>
+                    <th>份额</th>
+                    <th>占比</th>
+                    <th>加权期限</th>
+                    <th>预计到期日</th>
+                    <th>询价区间</th>
+                </tr>
+                <tr>
+                    <td>优先A1</td>
+                    <td>中债AAA/大公AA</td>
+                    <td>1.80亿</td>
+                    <td>15.88%</td>
+                    <td>0.53年</td>
+                    <td>2017.05.06</td>
+                    <td>3.10%~4.10%</td>
+                </tr>
+                <tr>
+                    <td>优先A1</td>
+                    <td>中债AAA/大公AA</td>
+                    <td>1.80亿</td>
+                    <td>15.88%</td>
+                    <td>0.53年</td>
+                    <td>2017.05.06</td>
+                    <td>3.10%~4.10%</td>
+                </tr>
+                <tr>
+                    <td>优先A1</td>
+                    <td>中债AAA/大公AA</td>
+                    <td>1.80亿</td>
+                    <td>15.88%</td>
+                    <td>0.53年</td>
+                    <td>2017.05.06</td>
+                    <td>3.10%~4.10%</td>
+                </tr>
+                <tr>
+                    <td>优先A1</td>
+                    <td>中债AAA/大公AA</td>
+                    <td>1.80亿</td>
+                    <td>15.88%</td>
+                    <td>0.53年</td>
+                    <td>2017.05.06</td>
+                    <td>3.10%~4.10%</td>
+                </tr>
+            </table>
+        </div>
+        <div class="list-item">
+            <ul>
+                <li>预计发行日: 2016.11.13 周五</li>
+                <li>华谊兄弟影院信托受益权资产支持证券</li>
+                <li>总规模: 11.35亿</li>
+                <li>发行期</li>
+                <li>上交所</li>
+                <li>企业ABS</li>
+            </ul>
+            <table class="table table-no-border">
+                <tr>
+                    <th>分档情况</th>
+                    <th>评级</th>
+                    <th>份额</th>
+                    <th>占比</th>
+                    <th>加权期限</th>
+                    <th>预计到期日</th>
+                    <th>询价区间</th>
+                </tr>
+                <tr>
+                    <td>优先A1</td>
+                    <td>中债AAA/大公AA</td>
+                    <td>1.80亿</td>
+                    <td>15.88%</td>
+                    <td>0.53年</td>
+                    <td>2017.05.06</td>
+                    <td>3.10%~4.10%</td>
+                </tr>
+                <tr>
+                    <td>优先A1</td>
+                    <td>中债AAA/大公AA</td>
+                    <td>1.80亿</td>
+                    <td>15.88%</td>
+                    <td>0.53年</td>
+                    <td>2017.05.06</td>
+                    <td>3.10%~4.10%</td>
+                </tr>
+                <tr>
+                    <td>优先A1</td>
+                    <td>中债AAA/大公AA</td>
+                    <td>1.80亿</td>
+                    <td>15.88%</td>
+                    <td>0.53年</td>
+                    <td>2017.05.06</td>
+                    <td>3.10%~4.10%</td>
+                </tr>
+                <tr>
+                    <td>优先A1</td>
+                    <td>中债AAA/大公AA</td>
+                    <td>1.80亿</td>
+                    <td>15.88%</td>
+                    <td>0.53年</td>
+                    <td>2017.05.06</td>
+                    <td>3.10%~4.10%</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div style="height: 50px; line-height: 50px; text-align: center; margin: 20px auto;">
+        <a href="#" class="btn btn-default">加载更多产品</a>
+    </div>
+</div>
+</body>
+</html>

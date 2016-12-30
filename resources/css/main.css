@@ -1,4 +1,7 @@
-
+a {
+    color: #000;
+    list-style: none;
+}
 .outer-container {
     width: 90%;
     margin: 0 auto;
@@ -29,6 +32,7 @@
 
 .rg-button-container {
     width: 400px;
+    height: 50px;
 }
 .detail-page-header {
     display: flex;
@@ -106,3 +110,9 @@
     text-align: center;
 }
 
+.modal-content .container {
+    margin: 20px auto;
+}
+.ctr-block {
+    display: block;
+}
